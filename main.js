@@ -20,10 +20,6 @@ function updateColor() {
     ++colorCounter;
 }
 function collisionHandler() {
-    console.log("DVD Top: ".concat(dvd.offsetTop));
-    console.log("DVD Left: ".concat(dvd.offsetLeft));
-    console.log("Main Element Height: ".concat(mainElement.clientHeight));
-    console.log("Main Element Width: ".concat(mainElement.clientWidth));
     if (dvd.offsetTop <= 0 || dvd.offsetTop + dvdHeight >= mainElement.clientHeight) {
         yIncrement *= -1;
         updateColor();
